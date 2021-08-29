@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --light-bg: #F4F7FC;
+  --card-bg: #e3e3e36e;
+  --icon-bg: #bebbbb;
+  --btn-primary: #00d1b2;
+  --btn-primary-dark: #00C4A7;
+  --btn-blue: #3273dc;
+  --input-bg: #D9DDE6;
+  --body-basic-color: #4a4a4a;
+  --card-title: #363636;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--body-basic-color);
+}
+
+.section {
+  background-color: var(--light-bg) !important;
+  min-height: 100vh;
+}
+
+/********** Login Starts *************/
+#loginPage {
+  background-color: var(--light-bg) !important;
+  height: 100vh;
+}
+#loginPage .card {
+  box-shadow: 0 0 3px 3px #f4f7fc, 6px 6px 8px 4px rgba(136, 136, 136, 0.7), -6px -6px 8px 4px rgba(244, 244, 244, 0.7);
+  z-index: 1;
+  background: var(--card-bg);
+  border-radius: 10px;
+  max-width: 80%;
+  width: 30rem;
+}
+#loginPage .card .card-title {
+  font-size: 2rem;
+  color: var(--card-title);
+}
+#loginPage .card .card-subtitle {
+  font-size: 1.1rem;
+}
+#loginPage .card form .v-input .v-input__slot {
+  background: var(--input-bg) !important;
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+}
+#loginPage .card form .v-input .v-input__slot .v-text-field__slot {
+  padding-left: 0.5rem;
+}
+#loginPage .card form .v-input .v-input__slot .v-text-field__slot .v-icon.mdi {
+  color: var(--icon-bg) !important;
+}
+#loginPage .card form .v-input.error--text .v-icon.mdi.error--text, #loginPage .card form .v-input.primary--text .v-icon.mdi.primary--text {
+  color: var(--icon-bg) !important;
+}
+#loginPage .card .btn {
+  background-color: var(--btn-primary);
+}
+#loginPage .card .btn:hover {
+  background-color: var(--btn-primary-dark);
+}
+#loginPage .card .forgetPassBtn {
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+#loginPage .card .forgetPassBtn:hover {
+  box-shadow: none;
+  background-color: transparent !important;
+  color: var(--body-basic-color);
+}
+
+/********** Login Ends *************/
+/********** Dashboard Vendor Starts *************/
+#dashboard-vendors .card {
+  border: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid #ececec;
+  transition: transform 500ms ease-in-out 25ms;
+  cursor: pointer;
+  min-height: 11rem;
+}
+#dashboard-vendors .card .card-title {
+  word-wrap: normal;
+}
+#dashboard-vendors .card:hover {
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.35);
+  transform: translate3d(0, -20px, 0);
+}
+
+/********** Dashboard Vendor Ends *************/
+/********** Header Ends *************/
+.v-navigation-drawer--close.v-navigation-drawer--temporary {
+  transform: translateX(-13vw) !important;
+}
+
+.v-app-bar-title__content {
+  width: auto !important;
+  font-size: 1.125rem;
+}
+
+.headerNav .v-list-item .v-list-item__title {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.headerNav .mainNav.v-list-item .v-list-item__title {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.headerNav .mainNav.v-list-item:hover {
+  background-color: white !important;
+  color: var(--card-title) !important;
+}
+
+.headerNav .mainNav.theme--dark.v-list-item--active:hover::before, .mainNav.theme--dark.v-list-item--active::before {
+  opacity: 0 !important;
+}
+
+.headerNav .mainNav.v-list-item--active {
+  background-color: white !important;
+  color: var(--card-title) !important;
+}
+
+/********** Header Ends *************/
+/********** Main Contents Starts *************/
+#mainContent .v-main__wrap {
+  background: var(--light-bg);
+}
+#mainContent .v-main__wrap .card {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02) !important;
+  border-radius: 20px;
+}
+#mainContent .v-main__wrap .card .v-card__subtitle, #mainContent .v-main__wrap .card .v-card__text {
+  font-size: 1.05rem;
+}
+#mainContent .v-main__wrap #change-password .v-card__text {
+  font-size: 1.1rem;
+}
+#mainContent .v-main__wrap #key-manager .card .card-title {
+  box-shadow: 0 0.125em 0.25em rgba(10, 10, 10, 0.1);
+  color: var(--card-title);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+#mainContent .v-main__wrap #key-manager .card tr:hover {
+  background-color: transparent !important;
+}
+#mainContent .v-main__wrap #key-manager .card .tbl-td {
+  border-bottom: none;
+  font-size: 1.1rem;
+  height: 2.5rem;
+}
+#mainContent .v-main__wrap #key-manager .card .tbl-first-td {
+  width: 6rem;
+  color: --card-title;
+  font-weight: 500;
+}
+#mainContent .v-main__wrap #payments thead th {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--card-title);
+}
+#mainContent .v-main__wrap #payments tbody td {
+  font-size: 1.05rem;
+}
+#mainContent .v-main__wrap #products thead th {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#mainContent .v-main__wrap #products tbody td {
+  font-size: 1rem;
+}
+#mainContent .v-main__wrap #transactionReport thead th, #mainContent .v-main__wrap #productReport thead th {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+#mainContent .v-main__wrap #transactionReport tbody td, #mainContent .v-main__wrap #productReport tbody td {
+  font-size: 1rem;
+}
+#mainContent .v-main__wrap #transactionReport #chart, #mainContent .v-main__wrap #productReport #chart {
+  width: 70% !important;
+}
+
+/********** Main Contents Ends *************/
+/**** Scrollbar Design End ****/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/**** Scrollbar Design End ****//*# sourceMappingURL=style.css.map */
